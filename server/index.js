@@ -26,3 +26,7 @@ app.use("/api/orders", orderRoutes);
 app.listen(process.env.PORT || 4000, () => {
   console.log("Server running on port 4000");
 });
+
+app.get("/", (req, res) => {
+  res.send("Backend is running!");
+});
