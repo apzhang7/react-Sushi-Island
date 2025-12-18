@@ -9,7 +9,9 @@ const orderRoutes = require("./routes/orders");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "https://react-sushi-island.vercel.app"
+}));
 app.use(express.json());
 
 // 🔌 MongoDB connection
